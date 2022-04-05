@@ -4,7 +4,8 @@
   "info": {
     "singularName": "ratatouille",
     "pluralName": "ratatouilles",
-    "displayName": "ratatouille"
+    "displayName": "ratatouille",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,11 +27,27 @@
       "type": "richtext"
     },
     "Photo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page",
+      "inversedBy": "ratatouille"
+    },
+    "commentaires": {
+      "displayName": "commentaires de la recette",
+      "type": "component",
+      "repeatable": true,
+      "component": "commentaires.commentaires-de-la-recette"
     }
   }
 }

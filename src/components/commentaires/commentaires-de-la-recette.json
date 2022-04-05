@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_commentaires_commentaires_de_la_recettes",
+  "info": {
+    "displayName": "commentaires de la recette",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "string"
+    },
+    "detail": {
+      "type": "richtext"
+    },
+    "valide": {
+      "type": "boolean"
+    }
+  }
+}
