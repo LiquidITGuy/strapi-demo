@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ratatouilles",
+  "info": {
+    "singularName": "ratatouille",
+    "pluralName": "ratatouilles",
+    "displayName": "ratatouille"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Nom",
+      "required": true
+    },
+    "recette": {
+      "type": "richtext"
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "Photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
